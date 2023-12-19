@@ -43,6 +43,13 @@ def quadBezier(start, point, end, draw):
 		if draw:
 			pygame.draw.line(screen, white, a, b)
 		
+while True:
+
+#INPUT DETECTION
+	for event in pygame.event.get():
+		#close window
+		if event.type == pygame.QUIT:
+			sys.exit()
 
 #DRAW 
 	screen.fill(black)
